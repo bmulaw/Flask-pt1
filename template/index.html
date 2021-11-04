@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Artist</title>
+</head>
+<body>
+    <form action="{{ url_for('get_artist')}}" method="POST">
+        Name: <input type="text" name="name"> 
+        <br><br>
+        Favorite Musician: <input type="text" name="artist"> 
+        <input type="submit" value="Submit">
+    </form>
+    <p>Hello {{ name }}, you like {{ artist }}</p>
+</body>
+</html>
