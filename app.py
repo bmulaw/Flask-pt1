@@ -5,9 +5,8 @@ app=Flask(__name__, template_folder='template')
 
 @app.route('/',methods =["POST", "GET"])
 def get_artist():
-    name = request.form.get("name")
     artist = request.form.get("artist")
-    return render_template("index.html", name=name, artist=artist)
+    return render_template("index.html", artist=artist)
 
 if __name__ == '__main__':
     app.run(debug=True)
