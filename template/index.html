@@ -6,8 +6,13 @@
 </head>
 <body>
     <form action="{{ url_for('get_artist')}}" method="POST">
-        Favorite Musician: <input type="text" name="artist"> 
+        
+        Favorite Musician: 
+        
+        <input type="text" name="artist"> 
+        
     </form>
+    
     <p>{{ artist }}</p>
 </body>
 </html>
